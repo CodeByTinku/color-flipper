@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color flipper</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .nav-center {
+      background-color: #f7f8f2;
+      box-shadow: 0 0 4px black;
+      height: 25px;
+    }
+    .nav-center h4 {
+      color: rgb(18, 116, 190);
+      display: flex;
+      text-align: center;
+      width: 100%;
+      padding-left: 45%;
+      padding-top: 4px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 20px 0 20px 0;
+    }
+    .container #btn {
+      background-color: #fff;
+      border: 2px solid #000;
+      border-radius: 10px;
+      width: 100px;
+      align-items: center;
+      margin-left: 50px;
+    }
+    .color {
+      color: lightblue;
+    }
+    #btn:hover {
+      background-color: red;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>color flipper</h4>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h3>background color: <span class="color">#fff</span></h3>
+        <button class="btn btn-hero" id="btn">click me</button>
+      </div>
+    </main>
+    <script src="colorflipper.js"></script>
+  </body>
+</html>
